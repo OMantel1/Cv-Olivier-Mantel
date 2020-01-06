@@ -19,6 +19,7 @@ body {
     list-style: none;
     max-width: 900px;
     width: 100%;
+    height: 297mm;
     margin: auto;
     font-family: lato, sans-serif;
     font-weight: 300;
@@ -41,6 +42,7 @@ body {
             color: $vert;
         }
     }
+
     p {
         margin: 7px;
     }
@@ -99,8 +101,8 @@ header {
                 padding-right: 10px;
             }
         }
-        
-        h2{
+
+        h2 {
             padding-top: 10px;
         }
 
@@ -122,7 +124,7 @@ header {
     }
 }
 
-.box{
+.box {
     padding-bottom: 14px;
 }
 
@@ -334,18 +336,5 @@ header {
     .main_items_titre {
         display: flex;
         justify-content: space-between;
-    }
-}
-
-
-/////////////////////////////////////////
-// Media queries print
-////////////////////////////////////////
-@media print {
-
-    html,
-    body {
-        width: 210mm;
-        height: 253mm;
     }
 }
