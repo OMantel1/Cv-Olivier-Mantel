@@ -121,9 +121,13 @@ body {
 .box {
     padding-bottom: 14px;
     &__langages{
+        padding: 0px 10px;
         &__items{
             display: flex;
-        flex-wrap: wrap;
+            align-items: center;
+            i{
+                width: 10%;
+            }
         }
     }
 }
@@ -151,6 +155,19 @@ body {
     #photo {
         margin-left: 30px;
         order: 1;
+    }
+
+    .box {
+        padding-bottom: 14px;
+        &__langages{
+            padding: 0px 10px;
+            &__items{
+                display: flex;
+                align-items: center;
+                width: 50%;
+                margin: auto;
+            }
+        }
     }
 
 }
