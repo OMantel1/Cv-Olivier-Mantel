@@ -160,12 +160,15 @@ body {
     .box {
         padding-bottom: 14px;
         &__langages{
-            padding: 0px 10px;
             &__items{
                 display: flex;
                 align-items: center;
                 width: 50%;
-                margin: auto;
+                background-color: white;
+                border-radius: 5px;
+                margin: 4px auto;
+                padding: 0px 40px;
+                box-shadow: $gris 0px 0px 1px;
             }
         }
     }
