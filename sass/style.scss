@@ -120,6 +120,23 @@ body {
 
 .box {
     padding-bottom: 14px;
+    &__langages{
+        padding: 0px 10px;
+        &__items{
+            display: flex;
+            align-items: center;
+            i{
+                width: 10%;
+                color: $grisfoncé;
+            }
+            .fab{
+                font-size: 1.5em;
+            }
+            .fas{
+                font-size: 1.2em;
+            }
+        }
+    }
 }
 
 
@@ -145,6 +162,22 @@ body {
     #photo {
         margin-left: 30px;
         order: 1;
+    }
+
+    .box {
+        padding-bottom: 14px;
+        &__langages{
+            &__items{
+                display: flex;
+                align-items: center;
+                width: 50%;
+                background-color: white;
+                border-radius: 5px;
+                margin: 4px auto;
+                padding: 0px 40px;
+                box-shadow: $gris 0px 0px 1px;
+            }
+        }
     }
 
 }
