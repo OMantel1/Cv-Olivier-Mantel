@@ -120,6 +120,12 @@ body {
 
 .box {
     padding-bottom: 14px;
+    &__langages{
+        &__items{
+            display: flex;
+        flex-wrap: wrap;
+        }
+    }
 }
 
 
