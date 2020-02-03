@@ -120,19 +120,29 @@ body {
 
 .box {
     padding-bottom: 14px;
-    &__langages{
+
+    > div {
+        padding: 0px 20px;
+    }
+
+    &__langages {
         padding: 0px 27px;
-        &__items{
+
+        &__items {
             display: flex;
             align-items: center;
-            i{
+            margin: 0px 7px;
+
+            i {
                 width: 10%;
                 color: $grisfoncé;
             }
-            .fab{
+
+            .fab {
                 font-size: 1.5em;
             }
-            .fas{
+
+            .fas {
                 font-size: 1.2em;
             }
         }
@@ -166,15 +176,16 @@ body {
 
     .box {
         padding-bottom: 14px;
-        &__langages{
-            &__items{
+
+        &__langages {
+            &__items {
                 display: flex;
                 align-items: center;
                 width: 50%;
                 background-color: white;
                 border-radius: 5px;
                 margin: 4px auto;
-                padding: 0px 40px;
+                padding: 0px 0px 0px 20px;
                 box-shadow: $gris 0px 0px 1px;
             }
         }
@@ -224,7 +235,7 @@ body {
         }
 
         p {
-            padding: 0px 20px;
+            padding: 0px 0px;
 
             @media screen and(max-width: 686px) {
                 text-align: center;
