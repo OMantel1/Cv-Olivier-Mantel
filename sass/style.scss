@@ -16,17 +16,12 @@ $vert: #22a6b3;
 //body
 /////////////
 body {
-    list-style: none;
     max-width: 900px;
     width: 100%;
     margin: auto;
     font-family: lato, sans-serif;
     font-weight: 300;
     font-size: 14px;
-
-    li {
-        list-style: none;
-    }
 
     h2 {
         font-size: 15px;
@@ -121,7 +116,7 @@ body {
 .box {
     padding-bottom: 14px;
 
-    > div {
+    >div {
         padding: 0px 20px;
     }
 
@@ -139,14 +134,27 @@ body {
             }
 
             .fab {
-                font-size: 1.5em;
+                font-size: 1.3em;
             }
 
             .fas {
-                font-size: 1.2em;
+                font-size: 1em;
             }
         }
     }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        padding-left: 10px;
+    }
+
+    li {
+        // list-style: url(images/tick.svg);
+        line-height: 24px;
+        list-style-type: none;
+    }
+
 }
 
 
@@ -228,8 +236,9 @@ body {
         h2 {
             text-align: center;
             font-weight: 500;
+            letter-spacing: 0.7px;
             background-color: $vert;
-            padding: 4px 0px;
+            padding: 4px 12px;
             margin-top: 0px;
             color: white;
         }
@@ -241,6 +250,10 @@ body {
                 text-align: center;
             }
         }
+
+        // ul {
+        //     text-align: ;
+        // }
     }
 
     //    /////////////

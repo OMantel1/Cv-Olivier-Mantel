@@ -1,15 +1,10 @@
 body {
-  list-style: none;
   max-width: 900px;
   width: 100%;
   margin: auto;
   font-family: lato, sans-serif;
   font-weight: 300;
   font-size: 14px;
-}
-
-body li {
-  list-style: none;
 }
 
 body h2 {
@@ -123,11 +118,22 @@ body p {
 }
 
 .box__langages__items .fab {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .box__langages__items .fas {
-  font-size: 1.2em;
+  font-size: 1em;
+}
+
+.box ul {
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+}
+
+.box li {
+  line-height: 24px;
+  list-style-type: none;
 }
 
 @media screen and (max-width: 686px) {
@@ -193,8 +199,9 @@ body p {
 #container aside h2 {
   text-align: center;
   font-weight: 500;
+  letter-spacing: 0.7px;
   background-color: #22a6b3;
-  padding: 4px 0px;
+  padding: 4px 12px;
   margin-top: 0px;
   color: white;
 }
