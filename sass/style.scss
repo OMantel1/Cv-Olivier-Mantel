@@ -213,6 +213,7 @@ body {
         &__langages {
             display: flex;
             flex-wrap: wrap;
+
             &__items {
                 width: 150px;
                 background-color: white;
@@ -226,15 +227,13 @@ body {
 }
 
 
-
-
 /////////////////////////////////////////
 // Container: colone gauche et droite;
 ////////////////////////////////////////
 #container {
     display: flex;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     margin: auto;
     color: $grisfoncé;
 
@@ -243,12 +242,11 @@ body {
         align-items: center;
     }
 
-
     /////////////
     // colonne de gauche
     ////////////
     aside {
-        width: 30vw;
+        width: 32vw;
         background-color: $gristresclair;
         padding: 0px 0px;
         position: relative;
@@ -286,7 +284,7 @@ body {
     // colonne de droite
     ////////////
     #main {
-        width: 70vw;
+        width: 68vw;
         height: 253mm;
         padding: 0px 20px;
         border-right: solid 2px $gristresclair;
