@@ -1,0 +1,20 @@
+{
+  "name": "cv-olivier-mantel",
+  "version": "1.0.0",
+  "description": "Cv Olivier Mantel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/style.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OMantel1/Cv-Olivier-Mantel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OMantel1/Cv-Olivier-Mantel/issues"
+  },
+  "homepage": "https://github.com/OMantel1/Cv-Olivier-Mantel#readme"
+}
