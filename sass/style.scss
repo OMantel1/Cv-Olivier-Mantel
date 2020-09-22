@@ -129,7 +129,7 @@ body {
             margin: 0px 10px;
 
             i {
-                width: 10%;
+                width: 20px;
                 color: $grisfoncé;
             }
         }
@@ -162,20 +162,23 @@ body {
     font-size: 1em;
 }
 
-.fa-envelope{
+.fa-envelope {
     padding-right: 10px;
 }
 
-.fa-phone-square-alt{
+.fa-phone-square-alt {
     font-size: 1.1em;
-    padding-right: 10px;;
-    
+    padding-right: 12px;
 }
 
 .contactItems {
     i {
-        width: 12%;
+        width: 24px;
         color: $grisfoncé;
+
+        @media screen and(max-width: 686px) {
+            width: 24px;
+        }
     }
 }
 
@@ -208,10 +211,10 @@ body {
         padding-bottom: 14px;
 
         &__langages {
+            display: flex;
+            flex-wrap: wrap;
             &__items {
-                display: flex;
-                align-items: center;
-                width: 50%;
+                width: 150px;
                 background-color: white;
                 border-radius: 5px;
                 margin: 4px auto;
@@ -220,7 +223,6 @@ body {
             }
         }
     }
-
 }
 
 
@@ -251,6 +253,10 @@ body {
         padding: 0px 0px;
         position: relative;
 
+        @media screen and(max-width: 840px) {
+            width: 40vw;
+        }
+
         @media screen and(max-width: 686px) {
             width: 100%;
         }
@@ -272,58 +278,8 @@ body {
                 text-align: center;
             }
         }
-
-        // ul {
-        //     text-align: ;
-        // }
     }
 
-    //    /////////////
-    //	// section langages
-    //	////////////
-    //    
-    //    .circle-box{
-    //        display: flex;
-    //        align-items: center;
-    //        padding-left: 20px;
-    //        .ronds{
-    //            display: block;
-    //            width: 10px;
-    //            height: 10px;
-    //            border-radius: 100%;
-    //            background-color:$vert;
-    //            border: solid $vert 1px;
-    //            margin-right: 5px;
-    //            }
-    //        .ronds-vides{
-    //            display: block;
-    //            width: 10px;
-    //            height: 10px;
-    //            background-color: white;
-    //            border-radius: 100%;
-    //            border:$vert solid 1px;
-    //            margin-right: 5px;
-    //            }
-    //        }
-    //    
-    //    .langages_blocs{
-    //	    display: flex;
-    //        margin: 7px 0px;
-    //        align-items: center;
-    //        .niveau{
-    //        font-size: 11px;
-    //        font-style: italic;
-    //        }
-    //        .langage{
-    //            width: 50%;
-    //            margin: 3px 0px;
-    //        }
-    //        p{
-    //            margin-bottom: 0px;
-    //            margin-top: 0px;
-    //        }
-    //    }
-    //    
 
 
     /////////////
@@ -335,6 +291,10 @@ body {
         padding: 0px 20px;
         border-right: solid 2px $gristresclair;
         border-bottom: solid 2px $gristresclair;
+
+        @media screen and(max-width: 840px) {
+            width: 60vw;
+        }
 
         @media screen and(max-width: 686px) {
             width: 95%;

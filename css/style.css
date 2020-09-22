@@ -76,7 +76,7 @@ body {
       align-items: center;
       margin: 0px 10px; }
       .box__langages__items i {
-        width: 10%;
+        width: 20px;
         color: #2f3542; }
   .box ul {
     margin: 0;
@@ -97,11 +97,14 @@ body {
 
 .fa-phone-square-alt {
   font-size: 1.1em;
-  padding-right: 10px; }
+  padding-right: 12px; }
 
 .contactItems i {
-  width: 12%;
+  width: 24px;
   color: #2f3542; }
+  @media screen and (max-width: 686px) {
+    .contactItems i {
+      width: 24px; } }
 
 @media screen and (max-width: 686px) {
   .header {
@@ -120,15 +123,16 @@ body {
 
   .box {
     padding-bottom: 14px; }
-    .box__langages__items {
+    .box__langages {
       display: flex;
-      align-items: center;
-      width: 50%;
-      background-color: white;
-      border-radius: 5px;
-      margin: 4px auto;
-      padding: 0px 0px 0px 20px;
-      box-shadow: #57606f 0px 0px 1px; } }
+      flex-wrap: wrap; }
+      .box__langages__items {
+        width: 150px;
+        background-color: white;
+        border-radius: 5px;
+        margin: 4px auto;
+        padding: 0px 0px 0px 20px;
+        box-shadow: #57606f 0px 0px 1px; } }
 #container {
   display: flex;
   width: 100%;
@@ -144,6 +148,9 @@ body {
     background-color: #dfe4ea;
     padding: 0px 0px;
     position: relative; }
+    @media screen and (max-width: 840px) {
+      #container aside {
+        width: 40vw; } }
     @media screen and (max-width: 686px) {
       #container aside {
         width: 100%; } }
@@ -166,6 +173,9 @@ body {
     padding: 0px 20px;
     border-right: solid 2px #dfe4ea;
     border-bottom: solid 2px #dfe4ea; }
+    @media screen and (max-width: 840px) {
+      #container #main {
+        width: 60vw; } }
     @media screen and (max-width: 686px) {
       #container #main {
         width: 95%;
