@@ -126,19 +126,11 @@ body {
         &__items {
             display: flex;
             align-items: center;
-            margin: 0px 7px;
+            margin: 0px 10px;
 
             i {
                 width: 10%;
                 color: $grisfoncé;
-            }
-
-            .fab {
-                font-size: 1.3em;
-            }
-
-            .fas {
-                font-size: 1em;
             }
         }
     }
@@ -155,6 +147,36 @@ body {
         list-style-type: none;
     }
 
+}
+
+
+
+////////////////////////////
+// Contact
+////////////////////////////
+.fab {
+    font-size: 1.3em;
+}
+
+.fas {
+    font-size: 1em;
+}
+
+.fa-envelope{
+    padding-right: 10px;
+}
+
+.fa-phone-square-alt{
+    font-size: 1.1em;
+    padding-right: 10px;;
+    
+}
+
+.contactItems {
+    i {
+        width: 12%;
+        color: $grisfoncé;
+    }
 }
 
 
