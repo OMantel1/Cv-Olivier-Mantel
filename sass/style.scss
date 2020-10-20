@@ -5,9 +5,6 @@ $grisfoncé: #2f3542;
 $gris: #57606f;
 $grisclair:#a4b0be;
 $gristresclair:#dfe4ea;
-$bleu: #5352ed;
-$blanc: #ffffff;
-$blancantiflash: #f1f2f6;
 $vert: #22a6b3;
 
 
@@ -42,12 +39,6 @@ body {
     }
 }
 
-.trait {
-    width: 98%;
-    border-top: solid 1px $grisclair;
-    margin: auto;
-}
-
 
 /////////////
 // HEADER
@@ -71,47 +62,48 @@ body {
         margin-right: 30px;
         flex-shrink: 0;
     }
+}
 
-    &_box {
-        padding: 13px 0px;
-        flex-shrink: 1;
-        position: relative;
+.header_box {
+    padding: 13px 0px;
+    flex-shrink: 1;
+    position: relative;
 
-        &_title,
-        &_text {
-            color: $grisfoncé;
-            font-weight: 300;
-            opacity: 0.7;
-            margin-top: 0px;
-            margin-top: 0px;
-            margin-left: 105px;
-            margin-bottom: 0;
-            border-left: solid 1px $vert;
+    &_title,
+    &_text {
+        color: $grisfoncé;
+        font-weight: 300;
+        opacity: 0.7;
+        margin-top: 0px;
+        margin-top: 0px;
+        margin-left: 105px;
+        margin-bottom: 0;
+        border-left: solid 1px $vert;
+        padding-left: 10px;
+
+        @media screen and(max-width: 686px) {
+            margin-left: 0px;
+            border-left: none;
+            padding-right: 10px;
+        }
+    }
+
+    &_title {
+        padding-top: 10px;
+    }
+
+    &_name {
+        margin-bottom: 0px;
+        padding-left: 70px;
+        color: $gris;
+        border-bottom: solid 1px $vert;
+
+        @media screen and(max-width: 686px) {
             padding-left: 10px;
-
-            @media screen and(max-width: 686px) {
-                margin-left: 0px;
-                border-left: none;
-                padding-right: 10px;
-            }
-        }
-
-        &_title {
-            padding-top: 10px;
-        }
-
-        &_name {
-            margin-bottom: 0px;
-            padding-left: 70px;
-            color: $gris;
-            border-bottom: solid 1px $vert;
-
-            @media screen and(max-width: 686px) {
-                padding-left: 10px;
-            }
         }
     }
 }
+
 
 .box {
     padding-bottom: 14px;
@@ -242,81 +234,81 @@ body {
         align-items: center;
     }
 
-    /////////////
-    // colonne de gauche
-    ////////////
-    aside {
-        width: 32vw;
-        background-color: $gristresclair;
+}
+
+
+/////////////
+// colonne de gauche
+////////////
+aside {
+    width: 32vw;
+    background-color: $gristresclair;
+    padding: 0px 0px;
+    position: relative;
+
+    @media screen and(max-width: 840px) {
+        width: 40vw;
+    }
+
+    @media screen and(max-width: 686px) {
+        width: 100%;
+    }
+
+    h2 {
+        text-align: center;
+        font-weight: 500;
+        letter-spacing: 0.7px;
+        background-color: $vert;
+        padding: 4px 12px;
+        margin-top: 0px;
+        color: white;
+    }
+
+    p {
         padding: 0px 0px;
-        position: relative;
-
-        @media screen and(max-width: 840px) {
-            width: 40vw;
-        }
 
         @media screen and(max-width: 686px) {
-            width: 100%;
-        }
-
-        h2 {
             text-align: center;
-            font-weight: 500;
-            letter-spacing: 0.7px;
-            background-color: $vert;
-            padding: 4px 12px;
-            margin-top: 0px;
-            color: white;
-        }
-
-        p {
-            padding: 0px 0px;
-
-            @media screen and(max-width: 686px) {
-                text-align: center;
-            }
         }
     }
+}
 
+/////////////
+// colonne de droite
+////////////
+#main {
+    width: 68vw;
+    height: 253mm;
+    padding: 0px 20px;
+    border-right: solid 2px $gristresclair;
+    border-bottom: solid 2px $gristresclair;
 
-
-    /////////////
-    // colonne de droite
-    ////////////
-    #main {
-        width: 68vw;
-        height: 253mm;
-        padding: 0px 20px;
-        border-right: solid 2px $gristresclair;
-        border-bottom: solid 2px $gristresclair;
-
-        @media screen and(max-width: 840px) {
-            width: 60vw;
-        }
-
-        @media screen and(max-width: 686px) {
-            width: 95%;
-            border-right: 0px;
-            padding: 0px 0px;
-            border-bottom: 0px;
-        }
-
-        h2 {
-            border-bottom: solid 2px $vert;
-            font-size: 15px;
-        }
-
-        p {
-            margin: 0px;
-        }
-
-        a {
-            font-size: 10px;
-            margin: 0;
-            padding: 0;
-        }
-
+    @media screen and(max-width: 840px) {
+        width: 60vw;
     }
+
+    @media screen and(max-width: 686px) {
+        width: 95%;
+        border-right: 0px;
+        padding: 0px 0px;
+        border-bottom: 0px;
+    }
+
+    h2 {
+        border-bottom: solid 2px $vert;
+        font-size: 15px;
+    }
+
+    p {
+        margin: 0px;
+    }
+
+    a {
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
 }
 
 
