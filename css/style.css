@@ -4,76 +4,62 @@ body {
   margin: auto;
   font-family: lato, sans-serif;
   font-weight: 300;
-  font-size: 14px; }
+  font-size: 14px;
+  border: solid #c2c7d0 1px; }
   body h2 {
     font-size: 15px; }
   body a {
-    color: #2f3542;
-    text-decoration-color: #a4b0be;
+    color: #272727;
     text-decoration: none; }
     body a:hover {
-      color: #22a6b3; }
+      color: #22a6b3;
+      text-decoration: underline; }
   body p {
     margin: 7px; }
 
 .header {
-  background-color: #dfe4ea;
-  height: auto;
+  min-height: 150px;
   display: flex;
-  align-items: center;
-  color: #2f3542; }
-  .header_img {
-    width: 100%;
-    border-radius: 100%;
-    box-shadow: 1px 1px 2px #dfe4ea; }
-  .header #photo {
-    max-width: 130px;
-    margin-right: 30px;
-    flex-shrink: 0; }
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 18px;
+  background-color: #f9f9fa; }
 
-.header_box {
-  padding: 13px 0px;
-  flex-shrink: 1;
-  position: relative; }
-  .header_box_title, .header_box_text {
-    color: #2f3542;
-    font-weight: 300;
-    opacity: 0.7;
-    margin-top: 0px;
-    margin-top: 0px;
-    margin-left: 105px;
-    margin-bottom: 0;
-    border-left: solid 1px #22a6b3;
-    padding-left: 10px; }
-    @media screen and (max-width: 686px) {
-      .header_box_title, .header_box_text {
-        margin-left: 0px;
-        border-left: none;
-        padding-right: 10px; } }
-  .header_box_title {
-    padding-top: 10px; }
-  .header_box_name {
-    margin-bottom: 0px;
-    padding-left: 70px;
-    color: #57606f;
-    border-bottom: solid 1px #22a6b3; }
-    @media screen and (max-width: 686px) {
-      .header_box_name {
-        padding-left: 10px; } }
+.header_box_name {
+  margin-bottom: 0;
+  color: #22a6b3;
+  font-size: 36px; }
+.header_box_title {
+  margin: 0;
+  letter-spacing: 1.6px;
+  font-size: 16px;
+  text-transform: uppercase; }
+.header_box_text {
+  margin: 12px 0px;
+  font-size: 14px;
+  color: grey; }
+
+.header_img {
+  border-radius: 100%; }
 
 .box {
-  padding-bottom: 14px; }
+  padding-bottom: 54px; }
   .box > div {
-    padding: 0px 20px; }
+    padding: 0px 8px; }
   .box__langages {
-    padding: 0px 27px; }
+    padding: 0px 27px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
     .box__langages__items {
       display: flex;
       align-items: center;
-      margin: 0px 10px; }
+      margin: 4px 10px; }
       .box__langages__items i {
-        width: 20px;
-        color: #2f3542; }
+        width: 28px;
+        font-size: 22px;
+        color: #272727; }
+      .box__langages__items .fas {
+        font-size: 18px; }
   .box ul {
     margin: 0;
     padding: 0;
@@ -83,21 +69,21 @@ body {
     list-style-type: none; }
 
 .fab {
-  font-size: 1.3em; }
+  font-size: 1.4em; }
 
 .fas {
-  font-size: 1em; }
+  font-size: 1.1em; }
 
 .fa-envelope {
-  padding-right: 10px; }
+  padding-right: 8px; }
 
 .fa-phone-square-alt {
-  font-size: 1.1em;
-  padding-right: 12px; }
+  font-size: 1.3em;
+  padding-right: 8px; }
 
 .contactItems i {
   width: 24px;
-  color: #2f3542; }
+  color: #272727; }
   @media screen and (max-width: 686px) {
     .contactItems i {
       width: 24px; } }
@@ -134,7 +120,7 @@ body {
   width: 100%;
   min-height: 100%;
   margin: auto;
-  color: #2f3542; }
+  color: #272727; }
   @media screen and (max-width: 686px) {
     #container {
       flex-direction: column;
@@ -142,7 +128,6 @@ body {
 
 aside {
   width: 32vw;
-  background-color: #dfe4ea;
   padding: 0px 0px;
   position: relative; }
   @media screen and (max-width: 840px) {
@@ -152,25 +137,24 @@ aside {
     aside {
       width: 100%; } }
   aside h2 {
-    text-align: center;
-    font-weight: 500;
-    letter-spacing: 0.7px;
-    background-color: #22a6b3;
-    padding: 4px 12px;
-    margin-top: 0px;
-    color: white; }
-  aside p {
-    padding: 0px 0px; }
-    @media screen and (max-width: 686px) {
-      aside p {
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 0 18px;
+    color: #272727; }
+    @media (max-width: 686px) {
+      aside h2 {
         text-align: center; } }
+  @media screen and (max-width: 686px) {
+    aside p {
+      text-align: center; } }
 
 #main {
   width: 68vw;
   height: 253mm;
-  padding: 0px 20px;
-  border-right: solid 2px #dfe4ea;
-  border-bottom: solid 2px #dfe4ea; }
+  padding: 0px 20px; }
   @media screen and (max-width: 840px) {
     #main {
       width: 60vw; } }
@@ -182,7 +166,9 @@ aside {
       border-bottom: 0px; } }
   #main h2 {
     border-bottom: solid 2px #22a6b3;
-    font-size: 15px; }
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px; }
   #main p {
     margin: 0px; }
   #main a {
