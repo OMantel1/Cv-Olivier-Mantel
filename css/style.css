@@ -28,11 +28,11 @@ body {
 .header_box_name {
   margin-bottom: 0;
   color: #22a6b3;
-  font-size: 36px; }
+  font-size: 26px; }
 .header_box_title {
   margin: 0;
-  letter-spacing: 1.6px;
-  font-size: 16px;
+  letter-spacing: 4.4px;
+  font-size: 18px;
   text-transform: uppercase; }
 .header_box_text {
   margin: 12px 0px;
