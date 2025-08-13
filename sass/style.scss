@@ -1,6 +1,7 @@
-$color-dark: #272727;
-$color-light: #57606f;
 $color-main: #22a6b3;
+$color-dark-700: #272727; 
+$color-dark-300: #57606f;
+$bg-color: #f9f9fa;
 
 body {
   max-width: 900px;
@@ -9,14 +10,13 @@ body {
   font-family: lato, sans-serif;
   font-weight: 300;
   font-size: 14px;
-  border: solid lighten($color-light, 40%) 1px;
 
   h2 {
     font-size: 15px;
   }
 
   a {
-    color: $color-dark;
+    color: $color-dark-700;
     text-decoration: none;
 
     &:hover {
@@ -40,7 +40,7 @@ body {
   justify-content: space-between;
   padding: 20px;
   margin-bottom: 18px;
-  background-color: lighten($color-light, 59%);
+  background-color: $bg-color;
 }
 
 .header_box {
@@ -94,7 +94,7 @@ body {
       i {
         width: 28px;
         font-size: 22px;
-        color: $color-dark;
+        color: $color-dark-700;
       }
 
       .fas {
@@ -135,15 +135,15 @@ body {
 .contactItems {
   i {
     width: 24px;
-    color: $color-dark;
+    color: $color-dark-700;
 
-    @media screen and(max-width: 686px) {
+    @media screen and (max-width: 686px) {
       width: 24px;
     }
   }
 }
 
-@media screen and(max-width: 686px) {
+@media screen and (max-width: 686px) {
   .header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -186,8 +186,8 @@ body {
         border-radius: 5px;
         margin: 4px auto;
         padding: 0px 0px 0px 20px;
-        -webkit-box-shadow: $color-light 0px 0px 1px;
-        box-shadow: $color-light 0px 0px 1px;
+        -webkit-box-shadow: $color-dark-300 0px 0px 1px;
+        box-shadow: $color-dark-300 0px 0px 1px;
       }
     }
   }
@@ -200,9 +200,9 @@ body {
   width: 100%;
   min-height: 100%;
   margin: auto;
-  color: $color-dark;
+  color: $color-dark-700;
 
-  @media screen and(max-width: 686px) {
+  @media screen and (max-width: 686px) {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -218,11 +218,11 @@ aside {
   padding: 0px 0px;
   position: relative;
 
-  @media screen and(max-width: 840px) {
+  @media screen and (max-width: 840px) {
     width: 40vw;
   }
 
-  @media screen and(max-width: 686px) {
+  @media screen and (max-width: 686px) {
     width: 100%;
   }
 
@@ -233,7 +233,7 @@ aside {
     font-weight: 700;
     letter-spacing: 1px;
     padding: 0 18px;
-    color: $color-dark;
+    color: $color-dark-700;
 
     @media (max-width: 686px) {
       text-align: center;
@@ -241,7 +241,7 @@ aside {
   }
 
   p {
-    @media screen and(max-width: 686px) {
+    @media screen and (max-width: 686px) {
       text-align: center;
     }
   }
@@ -252,11 +252,11 @@ aside {
   height: 253mm;
   padding: 0px 20px;
 
-  @media screen and(max-width: 840px) {
+  @media screen and (max-width: 840px) {
     width: 60vw;
   }
 
-  @media screen and(max-width: 686px) {
+  @media screen and (max-width: 686px) {
     width: 95%;
     border-right: 0px;
     padding: 0px 0px;
